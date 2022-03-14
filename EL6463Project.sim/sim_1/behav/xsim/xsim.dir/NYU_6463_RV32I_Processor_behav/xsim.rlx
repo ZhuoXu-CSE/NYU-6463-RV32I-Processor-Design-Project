@@ -1,0 +1,12 @@
+
+{ 
+    crc :  2268439566850079190  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto 38ed18faed2d4de0be3f4b4a7d0c2ddf --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot NYU_6463_RV32I_Processor_behav xil_defaultlib.NYU_6463_RV32I_Processor" , 
+    buildDate : "Dec  6 2018" , 
+    buildTime : "23:39:36" , 
+    linkCmd : "/usr/bin/gcc -Wa,-W  -O -fPIC  -m64  -Wl,--no-as-needed  -Wl,--unresolved-symbols=ignore-all  -o \"xsim.dir/NYU_6463_RV32I_Processor_behav/xsimk\"   \"xsim.dir/NYU_6463_RV32I_Processor_behav/obj/xsim_0.lnx64.o\" \"xsim.dir/NYU_6463_RV32I_Processor_behav/obj/xsim_1.lnx64.o\" -L\"/opt/Xilinx2018/Vivado/2018.3/lib/lnx64.o\" -lrdi_simulator_kernel  -lrdi_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

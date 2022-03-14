@@ -1,0 +1,50 @@
+START:
+	add t3,x0,x0
+	add t31,x0,x0
+	add t30,x0,x0
+	add t29,x0,x0
+	add t4,x0,x0
+	addi t1,x0,10
+	jal t31, MAIN
+HALT:
+	add t3,x0,x0
+	add t31,x0,x0
+	add t30,x0,x0
+	add t29,x0,x0
+	add t4,x0,x0
+	ECALL
+MAIN:
+	addi t3, t31, 0
+	jal t31, PUSH
+	addi t4, x0, 2
+	blt t1, t4, ADD_ONE
+	add t3, x0, x1
+	jal t31, PUSH
+	addi t1, t1, -1
+	jal t31, MAIN
+	jal t31, POP
+	add t29, t29, t3
+	addi $3, x0, 0
+	beq t3, x0, ADD
+ADD_ONE: 
+	addi t29, x0, 1
+ADD:
+	jal t31, POP
+	add t31, x0, t3
+	jalr x0, t31, 0
+
+PUSH:
+	addi t30,t30,4
+	sw   t30,t3, 0
+	jalr x0,t31,0
+POP:
+	lw t3, t30,0
+	addi t30,t30,-4
+	jalr x0,t31,0	
+
+SWAP:
+	add t3,x0,t1
+	add t1,x0,t2
+	add t2,x0,t3
+	add t3,x0,x0
+	jalr x0,t31,0

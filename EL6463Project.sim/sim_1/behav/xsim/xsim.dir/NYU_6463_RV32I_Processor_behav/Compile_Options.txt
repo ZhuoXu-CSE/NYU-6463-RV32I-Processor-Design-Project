@@ -1,0 +1,1 @@
+-wto "38ed18faed2d4de0be3f4b4a7d0c2ddf" --incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "secureip" --snapshot "NYU_6463_RV32I_Processor_behav" "xil_defaultlib.NYU_6463_RV32I_Processor" -log "elaborate.log" 

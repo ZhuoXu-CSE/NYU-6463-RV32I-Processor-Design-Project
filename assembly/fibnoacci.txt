@@ -1,0 +1,13 @@
+addi t5,x0, 6	
+addi t1,x0,1 	
+addi t2,x0,0 	
+addi t3,x0,0 	
+addi t4,x0,1 	
+FOR:
+    add t3, t1, t2
+    add t2, x0, t1
+    add t1, x0, t3
+    addi t4, t4, 1
+    blt t4, t5, FOR
+HALT:
+    ecall

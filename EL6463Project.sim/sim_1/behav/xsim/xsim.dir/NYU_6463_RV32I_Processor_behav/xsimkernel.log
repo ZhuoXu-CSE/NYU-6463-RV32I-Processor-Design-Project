@@ -1,0 +1,7 @@
+Running: xsim.dir/NYU_6463_RV32I_Processor_behav/xsimk -simmode gui -wdb NYU_6463_RV32I_Processor_behav.wdb -simrunnum 0 -socket 36062
+Design successfully loaded
+Design Loading Memory Usage: 45252 KB (Peak: 45252 KB)
+Design Loading CPU Usage: 110 ms
+Simulation completed
+Simulation Memory Usage: 126720 KB (Peak: 192528 KB)
+Simulation CPU Usage: 150 ms

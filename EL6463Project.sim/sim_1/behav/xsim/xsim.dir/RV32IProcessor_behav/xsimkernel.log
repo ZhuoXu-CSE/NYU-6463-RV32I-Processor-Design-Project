@@ -1,0 +1,4 @@
+Running: xsim.dir/RV32IProcessor_behav/xsimk -simmode gui -wdb RV32IProcessor_behav.wdb -simrunnum 0 -socket 55820
+Design successfully loaded
+Design Loading Memory Usage: 45264 KB (Peak: 45264 KB)
+Design Loading CPU Usage: 220 ms
